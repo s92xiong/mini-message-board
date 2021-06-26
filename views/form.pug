@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.message-container
+    p 
+      a(href="/")= "< Back" 
+    h1.message-title= "New Message"
+    form(method="POST" action="/new")
+      input(type="text" placeholder="Name" name="messageUser").message-input
+      input(type="text" placeholder="Message" name="messageText").message-input
+      button(type="submit").message-button= "Submit"

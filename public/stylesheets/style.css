@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +9,29 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+.message-container {
+  max-width: 300px;
+}
+
+.message-title {
+  font-size: 1.7em;
+}
+
+.message-input {
+  margin-bottom: 1.5em;
+  width: 100%;
+  border: 1px solid rgb(209, 209, 209);
+  padding: 2px 2px 2px 5px;
+  border-radius: 3px;
+}
+
+.message-input::-webkit-input-placeholder {
+  color: rgb(158, 158, 158);
+}
+
+.message-button {
+  width: 100%;
+  margin: 0 auto;
 }

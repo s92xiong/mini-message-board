@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  p 
+    a(href="/new")= "New Message" 
   h1= title
   //- p Welcome to #{title}
   each message in messages
