@@ -7,17 +7,45 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.container {
+  max-width: 350px;
+}
+
 a {
   color: #00B7FF;
 }
 
-.message-container {
-  max-width: 300px;
-}
+/* Index Template */
 
-.message-title {
+.title {
   font-size: 1.7em;
 }
+
+.user-message {
+  list-style-type: none;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 15px;
+}
+
+.user-message li {
+  margin: 0.5em 0;
+}
+
+.user-message li:nth-child(1) {
+  font-size: smaller;
+  color: rgb(126, 126, 126);
+}
+
+.user-message li:nth-child(2) {
+  font-weight: 600;
+  color: #2c5f74;
+}
+
+.user-message li:nth-child(3) {
+  color: #247596;
+}
+
+/* Form Template */
 
 .message-input {
   margin-bottom: 1.5em;
