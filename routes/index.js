@@ -2,6 +2,10 @@ var express = require('express');
 var router = express.Router();
 const messages = require("../public/javascripts/messages");
 
+const moment = require("moment");
+const currentTime = moment().format();                         
+const currentMoment = moment().startOf(currentTime).fromNow();
+
 // GET home page for index
 router.get('/', function(req, res, next) {
   res.render('index', {
@@ -26,7 +30,7 @@ router.post("/new", function(req, res, next) {
   messages.push({
     text: req.body.messageText, 
     user: req.body.messageUser, 
-    added: new Date()
+    added: currentMoment
   });
   res.redirect("/");
 });
